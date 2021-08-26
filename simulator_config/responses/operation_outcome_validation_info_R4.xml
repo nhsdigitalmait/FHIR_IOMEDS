@@ -1,0 +1,15 @@
+<OperationOutcome xmlns="http://hl7.org/fhir">
+	<id value="__MESSAGEID__"/>
+	<issue>
+		<severity value="information"/>
+		<code value="informational"/>
+		<details>
+			<coding>
+				<system value="http://hl7.org/fhir/operation-outcome"/>
+				<code value="MSG_CREATED"/>
+				<display value="New resource created"/>
+			</coding>
+		</details>
+		<diagnostics value="Message has been forwarded for FHIR R4 Validation - report will be forwarded to email registered to your ASID"/>
+	</issue>
+</OperationOutcome>

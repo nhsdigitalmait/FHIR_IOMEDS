@@ -1,0 +1,189 @@
+# Simulator rule definition file for ITK Testbench
+#	FHIR IOMEDS
+#	Chris Berry 24/08/2021 V1.0
+#
+BEGIN RESPONSES
+Invalid_NHS_Number_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_INN.xml	"400 Invalid NHS Number"
+Invalid_NHS_Number_cr_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_INN_cr.xml	"400 Invalid NHS Number"
+Invalid_Parameter_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_422_IP.xml	"422 Invalid Parameter"
+Invalid_Resource_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_422_IR.xml	"422 Invalid Resource"
+No_Record_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_NRF.xml	"404 No Record Found"
+No_Record_Found_Id_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_NRF_Ref.xml	"404 No Record Found"
+No_Record_Found_MI_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_NRF_MI.xml	"404 No Record Found"
+Invalid_Request_Message_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_IRM.xml	"400 Invalid Request Message"
+Organisation_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_ONF.xml	"404 Organisation Not Found"
+Missing_Or_Invalid_Header_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_MOIH.xml	"400 Missing Or Invalid Header"
+Missing_Or_Invalid_Header_cr_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_MOIH_cr.xml	"400 Missing Or Invalid Header"
+Unsupported_Media_Type_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_415_UMT.xml	"415 Unsupported Media Type"
+Unsupported_Media_Type_cr_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_415_UMT_cr.xml	"415 Unsupported Media Type"
+Duplicate_Rejected_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_422_DR.xml	"422 Duplicate Rejected"
+Internal_Server_Error_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_500_ISE.xml	"500 Internal Server Error"
+Bad_Request_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_BR.xml	"400 Bad Request"
+Reference_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_422_RNF.xml	"422 Reference Not Found"
+HTTP_From_MISSING_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_MOIH_From.xml	"400 Missing Or Invalid Header"
+HTTP_To_MISSING_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_MOIH_To.xml	"400 Missing Or Invalid Header"
+HTTP_Authorization_MISSING_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_MOIH_Auth.xml	"400 Missing Or Invalid Header"
+notFoundIOMEDS_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/NotFound_Trigger_IOMEDS.xml	"200 OK"
+Conversion_Error_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_200_IVP.xml	"400 Bad Request"
+Patient_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_PNF.xml	"404 Patient Not Found"
+Practitioner_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_PRNF.xml	"404 Practitioner Not Found"
+No_Record_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_404_NRF.xml	"404 No Record Found"
+Invalid_Identifier_System_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_IIS.xml	"400 Invalid Identifier System"
+Invalid_Identifier_Value_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_IIV.xml	"400 Invalid Identifier Value"
+Invalid_Code_System_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_400_ICS.xml	"400 Invalid Code System"
+Reference_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_422_RNF.xml	"422 Reference Not Found"
+Not_Implemented_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_501_NI.xml	"501 Not Implemented"
+operation_outcome_unsupported_verb_404	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/operation_outcome_unsupported_verb.xml	404
+SM_Create_Success_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/doc_ref_Create.xml	"201 Created" WITH_HTTP_HEADERS (  id : "d71b92ae-ad3c-41bd-a289-c2a98e105fc4"  )
+SM_PUT_PATCH_Create_Success_Response1	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/doc_ref_Create.xml	"201 Created" WITH_HTTP_HEADERS (  id : "d71b92ae-ad3c-41bd-a289-c2a98e105fc4" Content-Location : "https://StructureMedicinesTestHarness/Request/new_ea0a485187204b49b978bdcf7102388c" )
+SM_PUT_PATCH_Create_Success_Response2	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/doc_ref_Create.xml	"204 No Content" WITH_HTTP_HEADERS (  id : "d71b92ae-ad3c-41bd-a289-c2a98e105fc4" Content-Location : "https://StructureMedicinesTestHarness/Request/existing_ea0a485187204b49b978bdcf7102388c" )
+SM_Invalid_Identifier_System_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_400_IIS.xml	"400 Invalid Identifier System"
+SM_Invalid_Identifier_Value_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_400_IIV.xml	"400 Invalid Identifier Value"
+SM_Invalid_NHS_Number_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_400_INN.xml	"400 Invalid NHS Number"
+SM_Organisation_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_404_ONF.xml	"404 Organisation Not Found"
+SM_Patient_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_404_PNF.xml	"404 Patient Not Found"
+SM_Practitioner_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_404_PRNF.xml	"404 Practitioner Not Found"
+SM_No_Record_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_404_NRF.xml	"404 No Record Found"
+SM_Access_Denied_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_403_AD.xml	"403 Access Denied"
+SM_Duplicate_Rejected_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_409_DR.xml	"409 Duplicate Rejected"
+SM_Invalid_Resource_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_422_IR.xml	"422 Invalid Resource"
+SM_Invalid_Parameter_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_422_IP.xml	"422 Invalid Parameter"
+SM_Reference_Not_Found_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_422_RNF.xml	"422 Reference Not Found"
+SM_Bad_Request_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_400_BR.xml	"400 Bad Request"
+SM_Not_Implemented_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_501_NI.xml	"501 Not Implemented"
+SM_Internal_Server_Error_Response	TKW_ROOT/config/FHIR_IOMEDS/simulator_config/responses/SM_operation_outcome_500_ISE.xml	"500 Internal Server Error"
+do_process	NONE	0
+END RESPONSES
+
+BEGIN SUBSTITUTIONS
+__MESSAGEID__	UUID
+__TIMESTAMP__	ISO8601datetime
+__JOBID__	UUID
+__ERRORID__	UUID
+END SUBSTITUTIONS
+
+BEGIN EXPRESSIONS
+Conversion_Error	xpathequals boolean(//fhirconversionfailure) true
+HTTP_From_MISSING	http_header fromASID notmatches ^.+$
+HTTP_To_MISSING	http_header toASID notmatches ^.+$
+HTTP_Authorization_MISSING	http_header Authorization notmatches ^.+$
+EMPTY_CONTENT	matches ^$
+INVALID_CONTENT_TYPE	http_header content-type matches ^.*(text.*|application\/[a-z]+[^+]*)$
+EMPTY_ACCEPT	http_header accept notmatches ^.+$
+INVALID_ACCEPT	http_header accept notmatches ^.*application\/fhir\+(xml|json).*$
+SM_MedicationRequest	context_path matches ^.*\/MedicationRequest
+SM_MedicationDispense	context_path matches ^.*\/MedicationDispense
+SM_MedicationStatement	context_path matches ^.*\/MedicationStatement
+SM_PUT_PATCH_Success1	xpathequals //*[local-name()='MedicationRequest']/*[local-name()='trigger']/@value 201
+SM_PUT_PATCH_Success2	xpathequals //*[local-name()='MedicationRequest']/*[local-name()='trigger']/@value 204
+SM_Invalid_Identifier_System	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000001
+SM_Invalid_Identifier_Value	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000002
+SM_Invalid_NHS_Number	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000003
+SM_Organisation_Not_Found	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000004
+SM_Patient_Not_Found	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000005
+SM_Practitioner_Not_Found	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000006
+SM_No_Record_Found	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000007
+SM_Access_Denied	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000008
+SM_Duplicate_Rejected	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000009
+SM_Invalid_Resource	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000010
+SM_Invalid_Parameter	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000011
+SM_Reference_Not_Found	context_path matches ^.*c037a0cber97497683a1a5d2703e6aa3$
+SM_Bad_Request	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000012
+SM_Internal_Server_Error	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000013
+SM_Not_Implemented	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000014
+GEN_STU3	context_path matches ^.*\/STU3\/\$validate$
+GEN_R4	context_path matches ^.*\/R4\/\$validate$
+passthrough	Always
+dontpassthrough	Never
+END EXPRESSIONS
+
+BEGIN RULE
+POST
+IF	HTTP_From_MISSING	THEN	HTTP_From_MISSING_Response
+IF	HTTP_To_MISSING	THEN	HTTP_To_MISSING_Response
+IF	Conversion_Error	THEN	Conversion_Error_Response
+IF	GEN_STU3	THEN		SM_Create_Success_Response
+IF	GEN_R4	THEN	SM_Create_Success_Response
+IF	SM_MedicationRequest	AND	SM_Invalid_Identifier_System	THEN	SM_Invalid_Identifier_System_Response
+IF	SM_MedicationRequest	AND	SM_Invalid_Identifier_Value	THEN	SM_Invalid_Identifier_Value_Response
+IF	SM_MedicationRequest	AND	SM_Invalid_NHS_Number	THEN	SM_Invalid_NHS_Number_Response
+IF	SM_MedicationRequest	AND	SM_Organisation_Not_Found	THEN	SM_Organisation_Not_Found_Response
+IF	SM_MedicationRequest	AND	SM_Patient_Not_Found	THEN	SM_Patient_Not_Found_Response
+IF	SM_MedicationRequest	AND	SM_Practitioner_Not_Found	THEN	SM_Practitioner_Not_Found_Response
+IF	SM_MedicationRequest	AND	SM_No_Record_Found	THEN	SM_No_Record_Found_Response
+IF	SM_MedicationRequest	AND	SM_Access_Denied	THEN	SM_Access_Denied_Response
+IF	SM_MedicationRequest	AND	SM_Duplicate_Rejected	THEN	SM_Duplicate_Rejected_Response
+IF	SM_MedicationRequest	AND	SM_Invalid_Resource	THEN	SM_Invalid_Resource_Response
+IF	SM_MedicationRequest	AND	SM_Invalid_Parameter	THEN	SM_Invalid_Parameter_Response
+IF	SM_MedicationRequest	AND	SM_Reference_Not_Found	THEN	SM_Reference_Not_Found_Response
+IF	SM_MedicationRequest	AND	SM_Bad_Request	THEN	SM_Bad_Request_Response
+IF	SM_MedicationRequest	AND	SM_Internal_Server_Error	THEN	SM_Internal_Server_Error_Response
+IF	SM_MedicationRequest	AND	SM_Not_Implemented	THEN	SM_Not_Implemented_Response
+IF	SM_MedicationRequest	THEN	SM_Create_Success_Response
+IF	SM_MedicationDispense	AND	SM_Invalid_Identifier_System	THEN	SM_Invalid_Identifier_System_Response
+IF	SM_MedicationDispense	AND	SM_Invalid_Identifier_Value	THEN	SM_Invalid_Identifier_Value_Response
+IF	SM_MedicationDispense	AND	SM_Invalid_NHS_Number	THEN	SM_Invalid_NHS_Number_Response
+IF	SM_MedicationDispense	AND	SM_Organisation_Not_Found	THEN	SM_Organisation_Not_Found_Response
+IF	SM_MedicationDispense	AND	SM_Patient_Not_Found	THEN	SM_Patient_Not_Found_Response
+IF	SM_MedicationDispense	AND	SM_Practitioner_Not_Found	THEN	SM_Practitioner_Not_Found_Response
+IF	SM_MedicationDispense	AND	SM_No_Record_Found	THEN	SM_No_Record_Found_Response
+IF	SM_MedicationDispense	AND	SM_Access_Denied	THEN	SM_Access_Denied_Response
+IF	SM_MedicationDispense	AND	SM_Duplicate_Rejected	THEN	SM_Duplicate_Rejected_Response
+IF	SM_MedicationDispense	AND	SM_Invalid_Resource	THEN	SM_Invalid_Resource_Response
+IF	SM_MedicationDispense	AND	SM_Invalid_Parameter	THEN	SM_Invalid_Parameter_Response
+IF	SM_MedicationDispense	AND	SM_Reference_Not_Found	THEN	SM_Reference_Not_Found_Response
+IF	SM_MedicationDispense	AND	SM_Bad_Request	THEN	SM_Bad_Request_Response
+IF	SM_MedicationDispense	AND	SM_Internal_Server_Error	THEN	SM_Internal_Server_Error_Response
+IF	SM_MedicationDispense	AND	SM_Not_Implemented	THEN	SM_Not_Implemented_Response
+IF	SM_MedicationDispense	THEN	SM_Create_Success_Response
+IF	SM_MedicationStatement	AND	SM_Invalid_Identifier_System	THEN	SM_Invalid_Identifier_System_Response
+IF	SM_MedicationStatement	AND	SM_Invalid_Identifier_Value	THEN	SM_Invalid_Identifier_Value_Response
+IF	SM_MedicationStatement	AND	SM_Invalid_NHS_Number	THEN	SM_Invalid_NHS_Number_Response
+IF	SM_MedicationStatement	AND	SM_Organisation_Not_Found	THEN	SM_Organisation_Not_Found_Response
+IF	SM_MedicationStatement	AND	SM_Patient_Not_Found	THEN	SM_Patient_Not_Found_Response
+IF	SM_MedicationStatement	AND	SM_Practitioner_Not_Found	THEN	SM_Practitioner_Not_Found_Response
+IF	SM_MedicationStatement	AND	SM_No_Record_Found	THEN	SM_No_Record_Found_Response
+IF	SM_MedicationStatement	AND	SM_Access_Denied	THEN	SM_Access_Denied_Response
+IF	SM_MedicationStatement	AND	SM_Duplicate_Rejected	THEN	SM_Duplicate_Rejected_Response
+IF	SM_MedicationStatement	AND	SM_Invalid_Resource	THEN	SM_Invalid_Resource_Response
+IF	SM_MedicationStatement	AND	SM_Invalid_Parameter	THEN	SM_Invalid_Parameter_Response
+IF	SM_MedicationStatement	AND	SM_Reference_Not_Found	THEN	SM_Reference_Not_Found_Response
+IF	SM_MedicationStatement	AND	SM_Bad_Request	THEN	SM_Bad_Request_Response
+IF	SM_MedicationStatement	AND	SM_Internal_Server_Error	THEN	SM_Internal_Server_Error_Response
+IF	SM_MedicationStatement	AND	SM_Not_Implemented	THEN	SM_Not_Implemented_Response
+IF	SM_MedicationStatement	THEN	SM_Create_Success_Response
+IF	passthrough	THEN	notFoundIOMEDS_Response
+END RULE
+
+
+BEGIN RULE
+GET
+IF	passthrough	THEN	operation_outcome_unsupported_verb_404
+END RULE
+
+BEGIN RULE
+PUT
+IF	SM_PUT_PATCH_Success1	THEN	SM_PUT_PATCH_Create_Success_Response1
+IF	SM_PUT_PATCH_Success2	THEN	SM_PUT_PATCH_Create_Success_Response2
+IF	SM_Create_Success	THEN	SM_Create_Success_Response	ELSE NEXT
+IF	passthrough	THEN	notFoundIOMEDS_Response
+END RULE
+
+BEGIN RULE
+DELETE
+IF	passthrough	THEN	operation_outcome_unsupported_verb_404
+END RULE
+
+BEGIN RULE
+PATCH
+IF	SM_PUT_PATCH_Success1	THEN	SM_PUT_PATCH_Create_Success_Response1
+IF	SM_PUT_PATCH_Success2	THEN	SM_PUT_PATCH_Create_Success_Response2
+IF	SM_Create_Success	THEN	SM_Create_Success_Response
+IF	passthrough	THEN	notFoundIOMEDS_Response
+END RULE
+
+BEGIN RULE
+OPTIONS
+IF passthrough	THEN	operation_outcome_unsupported_verb_404
+END RULE
+

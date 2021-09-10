@@ -8,7 +8,7 @@ if [ $# -eq 0 ]
 fi
 
 #Build the docker image
-docker build -f Dockerfile -t fhir_iomeds .
+docker build -f Dockerfile.1000 -t fhir_iomeds .
 #Tag the docker image with today's date or provided label
 docker tag fhir_iomeds nhsdigitalmait/fhir_iomeds:$label
 echo Docker Image tagged with $label

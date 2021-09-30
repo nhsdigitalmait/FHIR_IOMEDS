@@ -91,8 +91,8 @@ SM_Reference_Not_Found	context_path matches ^.*c037a0cber97497683a1a5d2703e6aa3$
 SM_Bad_Request	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000012
 SM_Internal_Server_Error	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000013
 SM_Not_Implemented	xpathmatches //*[local-name()='Bundle']/*[local-name()='entry']/*[local-name()='resource']/*[local-name()='Patient']/*[local-name()='identifier']/*[local-name()='value']/@value 1000014
-GEN_STU3	context_path matches ^.*\/STU3\/\$validate$
-GEN_R4	context_path matches ^.*\/R4\/\$validate$
+GEN_STU3	context_path matches ^.*\/STU3\/validate$
+GEN_R4	context_path matches ^.*\/R4\/validate$
 passthrough	Always
 dontpassthrough	Never
 END EXPRESSIONS
@@ -154,7 +154,6 @@ IF	SM_MedicationStatement	AND	SM_Not_Implemented	THEN	SM_Not_Implemented_Respons
 IF	SM_MedicationStatement	THEN	SM_Create_Success_Response
 IF	passthrough	THEN	notFoundIOMEDS_Response
 END RULE
-
 
 BEGIN RULE
 GET

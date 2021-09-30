@@ -4,7 +4,7 @@ services:
         ports:
             - '8000:4434'
         volumes:
-            - '/home/prod/IOMedsOutput:/home/service/data' 
-            - '/home/prod/iomeds_profiles:/home/service/fhir' 
-            - '/home/prod/certs:/home/service/certs'
-        image: 'nhsdigitalmait/fhir_iomeds:20210907-1004'
+            - 'TKW_ROOT/FHIR_IOMEDS_OutputDir:/home/service/data' 
+            - 'TKW_ROOT/ITKMessageDefinition:/home/service/fhir' 
+            - 'TKW_ROOT/certs:/home/service/certs'
+        image: 'nhsdigitalmait/fhir_iomeds:20210910'
